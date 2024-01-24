@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+    background-image: url(Images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    font-family: 'Poppins' , sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.content_logo{
+    padding: 40px 0;
+}
+.logo{
+    width: 200px;
+    height: 30px;
+    padding-left: 25px;
+}
+.content_info{
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+    height: 80%;
+    max-height: 570px;
+}
+.left{
+    min-width: 55%;
+    max-height: 550px;
+    padding: 30px 15px 15px 10px;
+}
+.mockups{
+    width: 100%;
+    object-fit: cover;
+    padding-left: 15px;
+}
+.right{
+    max-width: 45%;
+    padding: 30px;
+    height: auto;
+    color: white;
+}
+.right_title{
+    font-size: 2.5rem;
+    padding-right: 30px;
+    line-height: 1.2;
+}
+.paragraph{
+    line-height: 1.5;
+    padding-right: 60px;
+    opacity: 0.8;
+}
+.register{
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: transparent;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+}
+.register:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+    gap: 2em;
+    font-size: 15px;
+    align-items: flex-end;
+}
+.icons{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: transparent;
+}
+.icons:hover{
+    border-color: hsl(300, 69%, 71%);
+}
+.icons:hover a{
+    color: hsl(300, 69%, 71%);
+}
+a{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        height: auto;
+    }
+    .content_info{
+        flex-direction: column;
+        height: auto;
+        max-width: 400px;
+        padding: 0;
+    }
+    .right{
+        min-width: 100%;
+        text-align: center;
+    }
+    .right_title{
+        padding: 0;
+    }
+    .paragraph{
+        padding: 15px 0;
+    }
+    .register{
+        padding: 15px 80px;
+    }
+    .footer{
+        padding-top: 50px;
+        justify-content: center;
+    }
+}
